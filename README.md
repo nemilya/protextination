@@ -40,7 +40,8 @@ https://tailwindcss.com/docs/installation
 
     $ npm install @tailwindcss/aspect-ratio
 
-    $ npx tailwindcss -i css/styles.css -o src/tailwind.css
+    $ npx tailwindcss -i css/styles.css -o public/css/tailwind.css
+
     $ NODE_ENV=production npx tailwindcss -i css/styles.css -o public/css/tailwind.css
 
 License
