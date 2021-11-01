@@ -1,6 +1,6 @@
 module.exports = {
    purge: [
-     './views/*.erb',
+     './views/index.erb',
    ],
   darkMode: false, // or 'media' or 'class'
   theme: {

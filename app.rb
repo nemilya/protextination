@@ -13,7 +13,7 @@ get '/' do
     config.utm_source = "protextination_client_app"
   end
   images = Unsplash::Photo.random(query: rand(2) == 1 ? "puppy" : "cat", count: 30)
-  @images = images.map{|image| { src: image.urls.small, url: image.links.html } }
+  @images = images.map{|image| { user_name: image.user.name, user_link: image.user.links.html, src: image.urls.small, url: image.links.html } }
 
   erb :index
 end
